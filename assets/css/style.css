@@ -1,0 +1,489 @@
+:root{
+    --color-headIcon: #f5f7f9;
+    --color-pri: #506a85;
+    --color-sec: #2f3f51;
+    --color-para-1: #a3b1bf;
+    --color-para-2: #73879c;
+    --color-icons: #506a85;
+    --color-green: #00bb9b;
+    --color-dark: #000000;
+    --color-white: #ffffff; 
+    --color-footer: #273545;
+    --color-form: #4e5c6b;
+}
+
+a:link, a:visited{
+    text-decoration: none;
+}
+
+/*---------------------------------headerIcons-section-CSS--------------------------------------------*/
+
+.headerIcons{
+    padding: 1.5rem 0;
+    background-color: var(--color-headIcon);
+}
+.headerIcons ul{
+    margin-bottom: 0;
+}
+
+.headerIcons a {
+    font-size: 1.2rem;
+    color: var(--color-pri);
+}
+
+/*---------------------------------header-section-CSS--------------------------------------------*/
+
+.header{
+    padding: 3.5rem 0;
+    background-color: var(--color-white);
+}
+
+.navbar-brand{
+    padding: 0.5rem 1.5rem;
+}
+
+.navbar-nav{
+    margin-left: 3rem;
+}
+
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+    margin-bottom: 0;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: var(--color-icons);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.navbar-right a{
+    margin-right: 1.5rem;
+}
+
+.navbar-default .navbar-nav.navList>li>a::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 100%;
+    color: var(--color-sec);
+    transition: all .5s ease-in-out;
+    z-index: -1;
+}
+
+.navbar-default .navbar-nav.navList>li>a:hover:before{
+    background-color: var(--color-sec) !important;
+    color: var(--color-white) !important;
+    width: 100%;
+}
+
+/*---------------------------------heroImg-section-CSS--------------------------------------------*/
+
+.heroImg{
+    background-image: linear-gradient(rgb(80, 106, 133, 0.2), rgb(80, 106, 133, 0.2)), url("../images/bgReen.jpg");
+    width: 100%;
+    padding: 30rem 0;
+    background-color: var(--color-pri);
+}
+
+.pri-heading{
+    font-size: 7.8rem;
+    font-weight: bold;
+    color: var(--color-white);
+    margin-bottom: 3rem;
+}
+
+.para{
+    font-size: 2.4rem;
+    font-weight: 400;
+    color: var(--color-para-1);
+    margin-bottom: 6.5rem;
+}
+
+.heading a{
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 2.5rem 7rem;
+    color: var(--color-white);
+    background-color: var(--color-green);
+    border-radius: 2px;
+    /* border: 2px solid var(--color-green); */
+    transition: all 0.5s ease-in-out;
+
+}
+
+.heading a:hover{
+    background-color: var(--color-white);
+    color: var(--color-green);
+}
+
+/* .heading a::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--color-green);
+    transition: all 0.5s ease-in-out;
+}
+
+.heading a:hover::before{
+    width: 100%;
+    background-color: var(--color-white);
+    color: var(--color-green);
+} */
+
+/* ---------------------------------------thumbNail-section-CSS------------------------------------------*/
+
+.thumbNail{
+    padding: 13rem 0;
+    background-color: var(--color-white);
+}
+
+.thumbNail .pri-heading{
+    font-size: 4.4rem;
+    font-weight: bold;
+    color: var(--color-icons);
+    margin-bottom: 3.5rem;
+}
+
+.thumbNail .para{
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: var(--color-para-1);
+    margin-bottom: 9rem;
+}
+
+.thumbIcon i{
+    color: var(--color-green);
+}
+
+.thumbNail .thumbIcon .pri-heading{
+    font-size: 2.6rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-top: 0;
+}
+
+.thumbNail .thumbIcon .para{
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+/* ---------------------------------latestWorks-section-CSS-START------------------------------------ */
+
+.latestWorks{
+    padding: 13rem 0;
+    background-color: var(--color-headIcon);
+}
+
+.latestWorks .pri-heading{
+    font-size: 4.4rem;
+    color: var(--color-icons);
+    margin-bottom: 4.5rem;
+}
+
+.latestWorks .para{
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: var(--color-para-2);
+}
+
+.latestWorks .box img{
+    width: 100%;
+} 
+
+.box2{
+    padding: 3rem 11.5rem;
+    background-color: var(--color-white);
+}
+
+.box2 h2{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--color-pri);
+}
+
+.box2 p{
+font-size: 1.4rem;
+font-weight: 400;
+color: var(--color-para-2);
+}
+
+.imageHotel{
+    margin-bottom: 8rem;
+}
+
+.box3{
+    height: 18.5rem;
+    width: 26rem;
+    margin-bottom: 4.5rem;
+} 
+
+.fourImg .box3 img{
+    width: 100%;
+}
+
+/* .fourImg{
+    
+} */
+
+span{
+    display: inline-block;
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: var(--color-green);
+    border-radius: 50%;
+}
+
+/* ---------------------------withUs-section-CSS-START----------------------------------------------- */
+
+.withUs{
+    padding: 13rem 0;
+}
+
+.withUs .heading .pri-heading{
+    font-size: 4.4rem;
+    font-weight: bold;
+    color: var(--color-pri);
+    margin-bottom: 4.5rem;
+    margin-top: 0;
+}
+
+.withUs .heading .para{
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 4.5rem;
+    color: var(--color-para-2);
+}
+
+.withUs .heading a{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--color-white);
+    padding: 2rem 2.5rem;
+    border-radius: 2px;
+    display: inline-block;
+}
+
+/* -----------------------footer-section-CSS-START------------------------------------------ */
+
+.footer{
+    padding: 7.5rem 0;
+    background-color: var(--color-sec);
+}
+
+.footer h2{
+    font-family: 1.6rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--color-white);
+    margin-bottom: 2.5rem;
+}
+.weAre img{
+    margin-bottom: 2.5rem;
+}
+
+.footer p{
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--color-para-1);
+    margin-bottom: 2.5rem;
+}
+
+.weAre h3{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--color-para-1);
+}
+
+.weAre i{
+    color: var(--color-para-1);
+}
+
+.footer span{
+    display: inline-block;
+}
+
+.footer .box{
+    height: 8.5rem;
+    width: 12.5rem;
+    margin-bottom: 0.6rem;
+    /* padding-left: 0; */
+}
+.footer .footerImg .box img{
+    width: 100%;
+}
+ul{
+    list-style: none;
+}
+
+.footer ul{
+    padding-left: 0;
+    
+}
+
+.address i{
+    margin-right: 1rem;
+}
+
+.address li{
+    margin-bottom: 1rem;
+}
+
+.address{
+    color: var(--color-para-1);
+}
+
+.form-control{
+    height: 4rem;
+    width: 27rem;
+    /* height: 4rem; */
+    background-color: var(--color-form);
+    border-color: var(--color-form);
+    border-radius: 5px;
+   
+}
+
+.signUpForm::placeholder{
+    color: var(--color-para-1);
+}
+.signUpForm{
+    position: relative;
+}
+
+button{
+    height: 3rem;
+    width: 9rem;
+    /* padding: 1rem; */
+    border-radius: 5px;
+    font-size: 1.3rem;
+    background-color: var(--color-green);
+    position: absolute;
+    color: var(--color-white);
+    text-transform: uppercase;
+    top: 10%;
+    right: 0;
+    /* border-color: 1px solid var(--color-green); */
+}
+
+
+.footerLinks{
+    padding: 3rem 0;
+    background-color: var(--color-footer);
+    color: #707e8c;
+}
+
+.footerLinks p{
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.footerList li{
+    padding: 0;
+}
+
+.footerList a{
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-left: 8px;
+    color: var(--color-para-2);
+} 
+
+
+@media all and (max-width: 768px){
+    .navbar-toggle{
+        width: 12%;
+        color: var(--color-green) !important;
+    }
+    .headerIcons{
+        display: none;
+    }
+    .header{
+        padding: 1rem 0;
+      
+    }
+    .navbar-nav{
+        margin-left: 0;
+    }
+    .heroImg{
+        padding: 5rem 0;
+    }
+
+    .heroImg .pri-heading {
+        font-size: 4.8rem;
+        margin-bottom: 1rem;
+    }
+    .heroImg .heading .para{
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    .heading a{
+        display: inline-block;
+        width: 100%;
+    }
+
+    .thumbNail{
+        padding: 2rem 0;
+    }
+    .thumbNail .pri-heading{
+        font-size: 4rem;
+        margin-bottom: 1rem;
+    }
+    .thumbNail .para{
+        font-size: 1.8rem;
+        margin-bottom: 3rem;
+    }
+    .thumbNail .thumbIcon .para{
+        margin-bottom: 2rem;
+    }
+    .latestWorks {
+        padding: 5rem 0;
+    }
+    .latestWorks .pri-heading {
+        font-size: 4rem;
+        margin-bottom: 1.5rem;
+    }
+    .latestWorks .para{
+        margin-bottom: 2rem;
+    }
+    .imageHotel .box2 {
+        padding: 1rem 0.6rem;
+    }
+    .imageHotel {
+        margin-bottom: 2rem;
+    }
+    .box3 {
+        height: 100%;
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+    .withUs {
+        padding: 2rem 0;
+    }
+    .withUs .heading .pri-heading {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    .withUs .heading .para {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    .form-control{
+        width: 100%;
+    }
+    button{
+        right: 4%;
+    }
+    .footer {
+        padding: 3rem 0;
+    }
+
+}
